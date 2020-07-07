@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">iEducate</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Beginners</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Clock</a>
+                        <a class="dropdown-item" href="#">ToDo List</a>
+                        <a class="dropdown-item" href="#">Login Authentication</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Intermediate</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Map</a>
+                        <a class="dropdown-item" href="#">Quiz</a>
+                        <a class="dropdown-item" href="#">Snake Game</a>
+
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <div class="container waao text-center">
+            <div class="row ">
+                <div class="col-6 text-right"  id="user" style="font-size: 15px; color: white;">
+                    Users Choice:
+                </div>
+                <div class="col-6 text-left" id="uchoice" style="font-size: 15px; color: white;">
+            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right"  id="computer" style="font-size: 15px; color: white;">
+                    Computers Choice:
+                </div>
+                <div class="col-6 text-left" id="cchoice" style="font-size: 15px; color: white;">
+                    
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-6 text-right"  id="result" style="font-size: 15px; color: white;">
+                    Winner:
+                </div>
+                <div class="col-6 text-left" id="winner" style="font-size: 15px; color: white;">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="choices">
+        <div id="r" class="choice">
+            <img src="https://img.icons8.com/officel/100/000000/hand-rock.png"/>
+        </div>
+        <div class="choice" id="p">
+            <img src="https://img.icons8.com/officel/100/000000/hand.png"/>
+        </div>
+        
+        <div class="choice" id="s">
+            <img src="https://img.icons8.com/color/100/000000/hand-scissors.png"/>
+        </div>
+    </div>
+    <p id="action-message">Make Your Move</p>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

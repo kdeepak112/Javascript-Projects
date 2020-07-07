@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>JS StopWatch/Clock</title>
+    <script  src="script.js"></script>
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">iEducate</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Beginners</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Clock</a>
+                        <a class="dropdown-item" href="#">ToDo List</a>
+                        <a class="dropdown-item" href="#">Login Authentication</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Intermediate</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Map</a>
+                        <a class="dropdown-item" href="#">Quiz</a>
+                        <a class="dropdown-item" href="#">Snake Game</a>
+
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="jumbotron ">
+        <h1 class="display-4">StopWatch and Clock</h1>
+        <p class="lead">
+            A Simple JS StopWatch and Clock
+        </p>
+        <hr class="my-2">
+
+
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+
+
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Clock
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        <table id="title-table" border="0" style="margin:0 auto; text-align:left;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <h1 style="color:#007EE5; font-weight:300;">WORLD CLOCK</h1>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col text-center">
+                                <h3 style="color: lightskyblue;">COUNTRIES</h3>
+                            </div>
+
+                            <div class="col text-center">
+
+                                <h3 style="color: lightskyblue;">TIME</h3>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <select class="form-control text-center" id="time" onchange="update(event)">
+                                    <option value="asia">India</option>
+                                    <option value="aus">Australia</option>
+                                    <option value="north">Canada</option>
+                                    <option value="south">Brazil</option>
+                                    <option value="africa">Africa</option>
+                                    <option value="europe">UK</option>
+                                    <option value="antartica">Antratica</option>
+                                </select>
+                            </div>
+
+                            <div class="col">
+
+                                <div class="text-center" id="clock" style="font-size: large;">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            StopWatch
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <table id="title-table" border="0" style="margin:0 auto; text-align:left;">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <h1 style="color:#007EE5; font-weight:300;">STOPWATCH</h1>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="container text-center">
+                            <div id="display" style="font-size: 40px;">
+                                00:00:00
+                            </div>
+                            <div class="buttons d-flex" style="justify-content: center; align-items: center;">
+                                <button class="btn btn-md-primary" id="startstop" onclick="stopWatch()">Start</button>
+                                <button class="btn btn-md-primary" id="reset" onclick="reset()">Reset</button>
+                                <button class="btn btn-md-primary" id="stop" onclick="stop()">Stop</button>
+                                <button class="btn btn-md-primary" id="capture" onclick="capture()">Capture</button>
+                            </div>
+                            <div id="set" style="font-size: 40px;">
+                            
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
